@@ -33,75 +33,81 @@ background: none;
 
  /*============= */
 
- .content {
+.content {
     padding: 0 135px;
     margin: auto;
- }
-
- :root {
-    --primary-color: #000958 ;
- }
-
- main {
-   
-    height: 10000px;
- }
-
- a {
-   text-decoration: none;
-   color: transparent;
- }
-
- /* =====HEADER-TOP===== */
-header {
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    background-color: white;
 }
- .header--top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 12px;
-    margin-top: 14px;
-    padding-bottom: 12px;
- }
 
- .pagelogo {
+:root {
+   --primary-color: #000958 ;
+}
+
+main {
+
+   height: 10000px;
+}
+
+a {
+text-decoration: none;
+color: transparent;
+}
+
+.desc {
+   color: #656689;
+   font-size: 1.6rem;
+   font-weight: 400;
+}
+
+/* =====HEADER-TOP===== */
+header {
+   position: sticky;
+   top: 0;
+   z-index: 1;
+   background-color: white;
+}
+.header--top {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-top: 12px;
+   margin-top: 14px;
+   padding-bottom: 12px;
+}
+
+.pagelogo {
+cursor: pointer;
+}
+
+.navbar {
+   display:flex ;
+   gap: 36px;
+}
+
+.navbar--element {
+   color: #5E6085;
+   font-size: 14px;
+   font-weight: 500;
+   line-height: 14px;
+}
+
+.navbar--element:hover {
+   color: var(--primary-color);
+}
+
+.btn--signUp {
+   padding: 18px 32px;
+   border: 1px solid var(--primary-color);
+   border-radius: 25px;
+   color: var(--primary-color);
+   font-size: 1.4rem;
+   font-weight: 600;
+   line-height: 14px; 
    cursor: pointer;
- }
+}
 
- .navbar {
-    display:flex ;
-    gap: 36px;
- }
-
- .navbar--element {
-    color: #5E6085;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 14px;
- }
-
- .navbar--element:hover {
-    color: var(--primary-color);
- }
-
- .btn--signUp {
-    padding: 18px 32px;
-    border: 1px solid var(--primary-color);
-    border-radius: 25px;
-    color: var(--primary-color);
-    font-size: 1.4rem;
-    font-weight: 600;
-    line-height: 14px; 
-    cursor: pointer;
- }
-
- .btn--signUp:hover{
-    opacity: 0.7;
- }
+.btn--signUp:hover{
+   opacity: 0.7;
+}
 
 
 .header--under {
@@ -111,12 +117,13 @@ header {
    margin-top: 100px;
 }
 
- .header--under-img__cat {
+.header--under-img__cat {
    width: 388px;
    height: 488px;
    border-radius: 16px;
    background: #FE997B;
- }
+}
+
 .header--bg-img__circle {
    position: absolute;
    top: 248px;
@@ -307,5 +314,108 @@ header {
    text-underline-offset: auto;
    text-underline-position: from-font;
    cursor: pointer;
+}
+
+/* =====ABOUT===== */
+
+.about {
+   position: relative;
+   margin-top: 130px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.about--title {
+   padding-top: 108px;
+   width: 446px;
+   color: #000958;
+   font-size: 5.2rem ;
+   font-weight: 700;
+   line-height: 1.2; /* 119.231% */
+}
+
+.about--desc {
+   margin-top: 24px;
+   width: 431px;
+   line-height: 1.87; /* 187.5% */
+}
+
+.reputation--group {
+   transform: translateX(-15px);
+   margin-top: 54px;
+   display: grid; 
+   width: 477px;
+   grid-template-columns: 1fr 1fr; 
+   grid-template-rows: 1fr 1fr;
+}
+
+.reputation--element p {
+   position: relative;
+   white-space: nowrap;
+   top: -3px;
+   color: #48496A;
+   font-size: 1.8rem;
+   font-weight: 500;
+   line-height: 1; /* 100% */
+}
+
+.reputation--element {
+   display: flex;
+   align-items: center;
+}
+
+.about--img {
+   position: relative;
+}
+
+.about--img span {
+   display: inline-block;
+   position: absolute;
+   bottom: 3px;
+   width: 494px;
+   height: 336px;
+   border-radius: 16px;
+   background: linear-gradient(180deg, #FCE0EF 0%, #FAC3D1 100%);
+   z-index: -1;
+}
+
+.about--card {
+   position: absolute;
+   top: 165px;
+   right: 555px;
+   padding: 30px 27px;
+   width: 136px;
+   height: 156px;
+   border-radius: 10px;
+   background: #5BD6E2;
+   box-shadow: -15px 26px 48px 0px rgba(85, 240, 255, 0.17);
+}
+
+.about-card--title {
+   color: #FFF;
+   text-align: center;
+   font-size: 4.2rem;
+   font-weight: 700;
+}
+
+.about-card--desc {
+   margin-top: 14px;
+   color: #C6F4F9;
+   text-align: center;
+   font-size: 1.4rem;
+   font-weight: 400;
+   line-height: 20px; /* 142.857% */
+}
+
+.dau-chan {
+   position: absolute;
+   top: -40px;
+   left: 85px;
+}
+
+.about-bg {
+   position: absolute;
+   top: 149px;
+   right: 0;
 }
 
